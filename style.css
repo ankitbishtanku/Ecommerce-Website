@@ -1,0 +1,152 @@
+.navbarA{
+	color: #264143;
+	font-size: 24px;
+	background-color: #f2ebe9 ;
+	justify-content: space-between;
+	padding-left: 15px;
+    padding-right: 15px;
+}
+.firstPage{
+	background-color: #eddcd9;
+}
+.list{
+	margin-top: 62px;
+}
+.item{
+	background-color: white;
+	border-radius: 13px;
+	padding: 10px;
+	width: 30.333333%;
+	margin: 17px;
+	border: 1px solid #de5499;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+.item img{
+	width: 100%;
+	max-height: 400px;
+	min-height: 400px;
+}
+.cart-btn{
+	border-radius: 7px;
+	padding: 5px 15px;
+	border: 1px solid #de5499;
+}
+.cart{
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 400px;
+	background-color: pink;
+	height: 100vh;
+	transition: 0.5s;
+
+}
+.active .cart{
+	left: calc(100% - 400px);
+}
+.active .container{
+	transform: translateX(-200px);
+}
+.checkout{
+	display: flex;
+	height: 50px;
+	bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.cart-list{
+	list-style-type: none;
+}
+.cart-img{
+	width: 75%;
+	margin-top: 10px;
+}
+.total{
+	width: 50%;
+    text-align: center;
+    background-color: yellow;
+    padding-top: 14px;
+}
+.close{
+	width: 50%;
+	color: white;
+	background-color: black;
+	border-color: none;
+}
+.changeQuantity{
+	display: flex;
+	align-items : center;
+}
+.changeQuantity button{
+	width: 35%;
+	border: none;
+}
+.count{
+	width: 35%;
+}
+.aboutCart{
+	display: flex;
+	align-items : center;
+	text-align: center;
+}
+
+/*newshop.html*/
+
+.firstNav a{
+   	text-decoration: none;
+   	color:black;
+}
+.mainSection{
+	background-color: #eddcd9;
+	margin-top: 62px;
+}
+
+.item a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+	.item{
+		width: 29.333333%;
+	}
+}	
+
+@media screen and (max-width: 768px){
+	.item{
+		width: 44.333333%;
+	}
+	.active .cart {
+    	left: calc(100% - 250px);
+	}
+	.cart{
+		width: 250px;
+	}
+	.active .container {
+    	transform: translateX(-187px);
+	}
+	.aboutCart{
+		width: 100%;
+	}
+	.price-cart{
+		width: 50.666667%;
+	}
+	.changeQuantity{
+		margin-top: 8px;
+		width: 49%;
+	}
+}
+@media screen and (max-width: 320px){ 
+	.item{
+		width: 92%;
+	}
+	.active .cart {
+    	left: calc(100% - 145px);
+	}
+	.cart{
+		width: 150px;
+	}
+	.active .container {
+    	transform: translateX(-115px);
+	}
+}
